@@ -11,7 +11,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaExchangerateAPI {
 
-    public static void consulta(String moeda){
+       public TabelaMoedas consultar(String moeda){
         String enderecoApi = "https://v6.exchangerate-api.com/v6/67d2ca7301090e9fbe270db5/latest/" + moeda.toUpperCase();
 
         Gson gson = new GsonBuilder()
@@ -32,15 +32,9 @@ public class ConsultaExchangerateAPI {
 
             TabelaMoedas tabelaMoedas = gson.fromJson(element.toString(), TabelaMoedas.class);
 
-
-            System.out.println(tabelaMoedas.brl());
-
-
-
-
+             return tabelaMoedas;
         } catch (IOException | InterruptedException e) {
-            throw new RuntimeException(e);
+            throw new RuntimeException(e.getMessage());
         }
     }
-
 }
