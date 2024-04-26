@@ -7,10 +7,10 @@ import java.util.Scanner;
 public class MenuPrincipal {
 
     private Scanner entrada;
-    Conversor conversor;
-    int opcao = 0;
-    double resultado = 0;
-    double valor = 0;
+    private Conversor conversor;
+    private int opcao = 0;
+    private double resultado = 0;
+    private double valor = 0;
 
     public MenuPrincipal() {
         entrada = new Scanner(System.in);
