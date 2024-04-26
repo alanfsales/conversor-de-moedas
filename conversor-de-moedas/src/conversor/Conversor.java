@@ -1,6 +1,5 @@
 package conversor;
 
-import consulta.ConsultaExchangerateAPI;
 import modelo.TabelaMoedas;
 
 public class Conversor {

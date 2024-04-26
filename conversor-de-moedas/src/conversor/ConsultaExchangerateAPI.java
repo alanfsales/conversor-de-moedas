@@ -1,4 +1,4 @@
-package consulta;
+package conversor;
 
 import com.google.gson.*;
 import modelo.TabelaMoedas;
